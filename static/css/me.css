@@ -41,7 +41,7 @@ body {
     padding-bottom: 5em !important;
 }
 
-.m-padded-lr {
+.m-padded-lr-responsive {
     padding-right: 5em !important;
     padding-left: 5em !important;
 }
@@ -100,6 +100,9 @@ body {
 .m-margin-top-large{
     margin-top: 2em !important;
 }
+.m-margin-bottom-small{
+    margin-bottom: 0.5em !important;
+}
 
 /*---color---*/
 .m-black {
@@ -122,5 +125,12 @@ body {
     }
     .m-mobile-show{
         display: block !important;
+    }
+    .m-padded-lr-responsive{
+        padding-left: 0 !important;
+        padding-right: 0!important;
+    }
+    .m-mobile-wide{
+        width: 100% !important;
     }
 }
