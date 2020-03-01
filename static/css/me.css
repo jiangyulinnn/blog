@@ -103,6 +103,11 @@ body {
 .m-margin-bottom-small{
     margin-bottom: 0.5em !important;
 }
+/*---shadow---*/
+.m-shadow-small{
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
 
 /*---color---*/
 .m-black {
@@ -127,6 +132,10 @@ body {
         display: block !important;
     }
     .m-padded-lr-responsive{
+        padding-left: 0 !important;
+        padding-right: 0!important;
+    }
+    .m-mobile-lr-clear{
         padding-left: 0 !important;
         padding-right: 0!important;
     }
