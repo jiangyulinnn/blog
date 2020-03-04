@@ -37,7 +37,7 @@
     <!--中间内容-->
     <div class="m-container m-padded-tb-big">
         <div class="ui container">
-            <div class="ui grid">
+            <div class="ui stackable grid">
                 <div class="eleven wide column">
                     <img src="https://unsplash.it/800/600?image=1005" alt="" class="ui rounded image">
                 </div>
@@ -50,13 +50,26 @@
                         <p class="m-text">热爱编程，喜欢折腾，正在探索高效学习的编程技术的方法…</p>
                     </div>
                     <div class="ui attached segment">
-
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">摄影</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">跑步</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">思考</div>
                     </div>
                     <div class="ui attached segment">
-
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">Java</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">Python</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">MYSQL</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">区块链</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny">大数据</div>
                     </div>
                     <div class="ui bottom attached segment">
-
+                        <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                        <a href="#" class="ui qq circular icon button" data-content="438146006"><i class="qq icon"></i></a>
+                        <a href="#" class="ui circular icon button"><i class="twitter icon"></i></a>
+                        <a href="#" class="ui wechat circular icon button"><i class="wechat icon"></i></a>
+                    </div>
+                    <div class="ui wechat-qr flowing popup transition hidden">
+                        <img src="./static/images/WechatIMG66.jpeg" alt="" class="ui grounded image" style="width: 120px">
                     </div>
                 </div>
             </div>
@@ -108,6 +121,12 @@
 <script>
     $('.menu.toogle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('.qq').popup()
+    $('.wechat').popup({
+        popup: $('.wechat-qr'),
+        on: 'click',
+        position: 'bottom center'
     });
 
 
